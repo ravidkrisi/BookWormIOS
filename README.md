@@ -102,7 +102,3 @@ BookWormIOS/
 - Authentication and backend by [Firebase](https://firebase.google.com/)
 
 ---
-
-## 📄 License
-
-MIT License (or your choice) 
