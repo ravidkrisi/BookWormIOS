@@ -4,6 +4,17 @@ BookWormIOS is a modern iOS app for book lovers to track, discover, and review b
 
 ---
 
+
+
+## 📸 Screenshots
+
+| Home Screen | Search | My Books | Book Details |
+|-------------|--------------|------------|---------|
+| ![screenshot-1](Screenshots/screenshot-1.png) | ![screenshot-2](Screenshots/screenshot-2.png) | ![screenshot-3](Screenshots/screenshot-3.png) | ![screenshot-4](Screenshots/screenshot-4.png) |
+
+
+---
+
 ## 🚀 Features
 
 - **Authentication:** Sign in with Google using Firebase Auth.
@@ -82,12 +93,6 @@ BookWormIOS/
 - `Features/Auth/`: Authentication flows and models.
 - `Features/Home/`: Home screen with trending books.
 - `Features/Review/`: Book review functionality.
-
----
-
-## 📸 Screenshots
-
-*Add screenshots of your app here for best portfolio impact!*
 
 ---
 
