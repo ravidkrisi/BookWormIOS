@@ -6,13 +6,36 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		724232292DF764D900F82B47 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 724232282DF764D900F82B47 /* GoogleSignIn */; };
+		7242322B2DF764D900F82B47 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7242322A2DF764D900F82B47 /* GoogleSignInSwift */; };
+		7242322E2DF765AE00F82B47 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 7242322D2DF765AE00F82B47 /* FirebaseAuth */; };
+		724232302DF765AE00F82B47 /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 7242322F2DF765AE00F82B47 /* FirebaseAuthCombine-Community */; };
+		724232322DF765AE00F82B47 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 724232312DF765AE00F82B47 /* FirebaseFirestore */; };
+		724232342DF765AE00F82B47 /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 724232332DF765AE00F82B47 /* FirebaseFirestoreCombine-Community */; };
+		724232362DF7662300F82B47 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 724232352DF7662300F82B47 /* FirebaseCore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		724232102DF7622600F82B47 /* BookWormIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookWormIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		724232382DF766FA00F82B47 /* Exceptions for "BookWormIOS" folder in "BookWormIOS" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 7242320F2DF7622600F82B47 /* BookWormIOS */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		724232122DF7622600F82B47 /* BookWormIOS */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				724232382DF766FA00F82B47 /* Exceptions for "BookWormIOS" folder in "BookWormIOS" target */,
+			);
 			path = BookWormIOS;
 			sourceTree = "<group>";
 		};
@@ -23,6 +46,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				724232292DF764D900F82B47 /* GoogleSignIn in Frameworks */,
+				7242322E2DF765AE00F82B47 /* FirebaseAuth in Frameworks */,
+				7242322B2DF764D900F82B47 /* GoogleSignInSwift in Frameworks */,
+				724232342DF765AE00F82B47 /* FirebaseFirestoreCombine-Community in Frameworks */,
+				724232362DF7662300F82B47 /* FirebaseCore in Frameworks */,
+				724232322DF765AE00F82B47 /* FirebaseFirestore in Frameworks */,
+				724232302DF765AE00F82B47 /* FirebaseAuthCombine-Community in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +95,13 @@
 			);
 			name = BookWormIOS;
 			packageProductDependencies = (
+				724232282DF764D900F82B47 /* GoogleSignIn */,
+				7242322A2DF764D900F82B47 /* GoogleSignInSwift */,
+				7242322D2DF765AE00F82B47 /* FirebaseAuth */,
+				7242322F2DF765AE00F82B47 /* FirebaseAuthCombine-Community */,
+				724232312DF765AE00F82B47 /* FirebaseFirestore */,
+				724232332DF765AE00F82B47 /* FirebaseFirestoreCombine-Community */,
+				724232352DF7662300F82B47 /* FirebaseCore */,
 			);
 			productName = BookWormIOS;
 			productReference = 724232102DF7622600F82B47 /* BookWormIOS.app */;
@@ -94,6 +131,10 @@
 			);
 			mainGroup = 724232072DF7622600F82B47;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				724232272DF764D900F82B47 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				7242322C2DF765AE00F82B47 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 724232112DF7622600F82B47 /* Products */;
 			projectDirPath = "";
@@ -252,6 +293,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BookWormIOS/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -270,10 +312,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ravidkrisi.BookWormIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = 1;
 				XROS_DEPLOYMENT_TARGET = 2.2;
 			};
 			name = Debug;
@@ -291,6 +334,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BookWormIOS/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -309,10 +353,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ravidkrisi.BookWormIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = 1;
 				XROS_DEPLOYMENT_TARGET = 2.2;
 			};
 			name = Release;
@@ -339,6 +384,63 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		724232272DF764D900F82B47 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+		7242322C2DF765AE00F82B47 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.14.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		724232282DF764D900F82B47 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 724232272DF764D900F82B47 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		7242322A2DF764D900F82B47 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 724232272DF764D900F82B47 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+		7242322D2DF765AE00F82B47 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7242322C2DF765AE00F82B47 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		7242322F2DF765AE00F82B47 /* FirebaseAuthCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7242322C2DF765AE00F82B47 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAuthCombine-Community";
+		};
+		724232312DF765AE00F82B47 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7242322C2DF765AE00F82B47 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		724232332DF765AE00F82B47 /* FirebaseFirestoreCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7242322C2DF765AE00F82B47 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreCombine-Community";
+		};
+		724232352DF7662300F82B47 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7242322C2DF765AE00F82B47 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 724232082DF7622600F82B47 /* Project object */;
 }

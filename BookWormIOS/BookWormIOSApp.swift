@@ -6,12 +6,26 @@
 //
 
 import SwiftUI
+import Firebase
+import GoogleSignIn
 
 @main
 struct BookWormIOSApp: App {
+    
+    let container: DIContainer
+    // configure firebase
+    init() {
+        FirebaseApp.configure()
+        self.container = DIContainer.prod()
+    }
+    
     var body: some Scene {
+        
         WindowGroup {
-            ContentView()
+            NavigationStack {
+                AuthRootView(vm: container.authViewModel)
+            }
+            .environmentObject(container)
         }
     }
 }
